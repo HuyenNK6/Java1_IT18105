@@ -24,5 +24,6 @@ public class DemoMath {
         double delta= Math.pow(b, 2)- 4*a*c; // delta= b^2 -4ac
         System.out.println("detal= "+ delta);
         System.out.println("Done");
+        System.out.println("sqrt= " + Math.sqrt(delta));
     }
 }
