@@ -6,6 +6,8 @@
 package bai4;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 /**
  *
@@ -34,9 +36,9 @@ public class DemoArrrayList {
 
         // ArrayList Có định kiểu: Integer
         ArrayList <Integer> arrListCĐKInt = new ArrayList<Integer>();
-        arrListCĐKInt.add(1);
+        arrListCĐKInt.add(9);
         arrListCĐKInt.add(2);
-        arrListCĐKInt.add(3);
+        arrListCĐKInt.add(5);
          ArrayList <String> arrListCĐKString = new ArrayList<String>();
         arrListCĐKString.add("huyen");
         
@@ -50,5 +52,28 @@ public class DemoArrrayList {
         for (int i = 0; i < arrListCĐKInt.size(); i++) {
             System.out.println(arrListCĐKInt.get(i));
         }
+        //4. Sắp xếp
+        Collections.sort(arrListCĐKInt);// sắp xếp tăng dần
+        Collections.reverse(arrListCĐKInt); //đảo ngược lại arrayList
+        System.out.println("sau sắp xếp");
+        //for-each: fore+ ctrl+ cach
+        for (Integer num : arrListCĐKInt) {
+            System.out.println(num);
+        }
+        //5. Các phương thức khác
+        System.out.println(arrListCĐKInt.isEmpty());//arrayList có rỗng hay ko?
+        
+        arrListCĐKInt.remove(0); //xóa phần tử tại vị trí index
+        arrListCĐKInt.add(0, 7);//chèn phần tử mới vào vị trí index
+        arrListCĐKInt.clear();//xóa hết mảng
+        
+        for (Integer num : arrListCĐKInt) {
+            System.out.println(num);
+        }
+        if (arrListCĐKInt.isEmpty()){
+            System.out.println("Danh sách trống");
+        }
+        
+        
     }
 }
