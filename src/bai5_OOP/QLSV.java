@@ -57,6 +57,7 @@ public class QLSV {
             if (sv.getHoTen().equalsIgnoreCase(hoTen)) {
 //                sv.xuat();
                 System.out.println(sv.toString());
+                break;
             }
         }
     }
